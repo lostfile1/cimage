@@ -14,7 +14,8 @@ print("encoding finished")
 
 outtput = raw_input('output textfile name: ')
 f= open(outtput,"w+")
-f.write(my_string.decode('utf-8'))
+f.write('<img src="data:image/jpg;base64, 'my_string.decode('utf-8'))
+f.write('" />')
 f.close()
 
 print("writing to file finished")
